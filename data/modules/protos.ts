@@ -2,6 +2,7 @@
  * Created by natsuki on 16/4/13.
  */
 import {BASE_URL} from "../configs"
+import {Request} from "sdk/request"
 export namespace Rest {
     export var BASE_URL = BASE_URL
     enum HttpPredicate {
@@ -47,7 +48,6 @@ export namespace Rest {
     }
 
     export function initWithWorker(worker) {
-        import {Request} from "sdk/request"
         for (let interfaceKey in interfaces) {
             console.log(interfaces[interfaceKey])
             if (interfaces.hasOwnProperty(interfaceKey)) {

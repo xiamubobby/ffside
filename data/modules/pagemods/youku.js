@@ -9,7 +9,7 @@ var protos_1 = require("../protos");
 var pageMod = require("sdk/page-mod");
 var youkuMod = pageMod.PageMod({
     include: "*.youku.com",
-    contentScriptFile: defaultscripts_1.defaultscripts.ARRAY.concat(["./sitemodules/youku/youkutstest.js"]),
+    contentScriptFile: defaultscripts_1.defaultscripts.ARRAY.concat([]),
     onAttach: init
 });
 function init(worker) {
