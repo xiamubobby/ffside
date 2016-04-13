@@ -1,0 +1,20 @@
+{
+  "title": "ffside",
+  "name": "ffside",
+  "version": "0.0.1",
+  "description": "ffside",
+  "icon": "resource://@ffside/data/icon.png",
+  "main": "index2.js",
+  "author": "xiamubobby",
+  "engines": {
+    "firefox": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jetpack"
+  ],
+  "permissions": {
+    "private-browsing": true,
+    "tabs": true
+  }
+}
