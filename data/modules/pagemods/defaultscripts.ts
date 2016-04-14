@@ -5,7 +5,7 @@
 export namespace defaultscripts {
     export var ARRAY = [
         "./libs/require.js",
-        "./configs.js",
+        "./test.js",
 
     ]
 }

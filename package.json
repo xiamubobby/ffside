@@ -14,12 +14,10 @@
     "jetpack"
   ],
   "permissions": {
+    "cross-domain-content": ["http://xiamubobby.gicp.net/", "http://momentjs.com/"],
     "private-browsing": true,
     "tabs": true
   },
   "dependencies": {
-    "glob": "^7.0.3",
-    "jquery": "^2.2.3",
-    "ts-loader": "^0.8.2"
   }
 }

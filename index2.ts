@@ -8,6 +8,8 @@ var tabs = require("sdk/tabs");
 var pageMod = require("sdk/page-mod");
 var Request = require("sdk/request").Request;
 
+console.log(self.data.url("configs.js"))
+
 var button = buttons.ActionButton({
     id: "ikanicon",
     label: "Visit Me",
