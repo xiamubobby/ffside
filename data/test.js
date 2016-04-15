@@ -26,8 +26,14 @@
 // require.config({
 //     paths: { jjj: "http://xiamubobby.gicp.net:41780/jjj.js" }
 // });
-require(["http://xiamubobby.gicp.net:41780/jjj.js"], function (jjj) {
+require.config({
+    baseUrl: "./data/",
+});
+var a = "http://xiamubobby.gicp.net:41780/jjj.js";
+var b = "resource://@ffside/data/configs.js";
+var c = "./data/configs.js";
+require(["configsar"], function (configs) {
     console.log("zhu");
-    console.log(jjj);
+    console.log(configs);
 });
 //# sourceMappingURL=test.js.map

@@ -6,7 +6,6 @@
         define(["require", "exports", "../../modules/protos"], factory);
     }
 })(function (require, exports) {
-    "use strict";
     /**
      *
      * Created by natsuki on 16/4/12.

@@ -10,7 +10,6 @@
         define(["require", "exports"], factory);
     }
 })(function (require, exports) {
-    "use strict";
     console.log("alpha");
     var BASE_URL = "http://127.0.0.1:8080/";
     console.log("beta");

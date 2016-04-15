@@ -6,7 +6,6 @@
         define(["require", "exports", "./defaultscripts", "../protos", "sdk/page-mod"], factory);
     }
 })(function (require, exports) {
-    "use strict";
     /**
      *
      * Created by natsuki on 16/4/13.
@@ -17,6 +16,7 @@
     var pageMod = require("sdk/page-mod");
     var youkuMod = pageMod.PageMod({
         include: "*.youku.com",
+        //contentScriptFile: defaultscripts.ARRAY.concat(["./sitemodules/youku/youkutstest.js"]),
         contentScriptFile: defaultscripts_1.defaultscripts.ARRAY.concat([]),
         onAttach: init
     });

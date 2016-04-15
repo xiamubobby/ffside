@@ -27,8 +27,13 @@
 // require.config({
 //     paths: { jjj: "http://xiamubobby.gicp.net:41780/jjj.js" }
 // });
-
-require(["http://xiamubobby.gicp.net:41780/jjj.js"], function(jjj) {
+require.config({
+    baseUrl: "./data/",
+})
+let a = "http://xiamubobby.gicp.net:41780/jjj.js"
+let b = "resource://@ffside/data/configs.js"
+let c = "./data/configs.js"
+require(["configsar"], function(configs) {
     console.log("zhu")
-    console.log(jjj);
+    console.log(configs);
 });

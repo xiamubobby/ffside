@@ -11,7 +11,6 @@ var __extends = (this && this.__extends) || function (d, b) {
         define(["require", "exports", "sdk/request"], factory);
     }
 })(function (require, exports) {
-    "use strict";
     var request_1 = require("sdk/request");
     var Rest;
     (function (Rest) {
