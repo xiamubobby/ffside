@@ -32,7 +32,7 @@ function withJQueryInjected(url) {
     ret = ["./libs/jquery-1.12.3.min.js", "./sitemodules/tstest.js", "./sitemodules/basemodule.js"].concat(ret);
     return ret;
 }
-require("./data/modules/pagemods/youku");
+require("./data/modules/pagemods/youku-addon");
 // var youkuMod = pageMod.PageMod({
 //     include: "*.youku.com",
 //     contentScriptFile: withJQueryInjected("./sitemodules/youku/youkutstest.js"),

@@ -31,9 +31,12 @@ require.config({
     baseUrl: "./data/",
 })
 let a = "http://xiamubobby.gicp.net:41780/jjj.js"
-let b = "resource://@ffside/data/configs.js"
-let c = "./data/configs.js"
-require(["configsar"], function(configs) {
-    console.log("zhu")
-    console.log(configs);
+let b = "resource://@ffside/data/configs-content.js"
+let c = "./data/configs-content.js"
+require([b], function(aa,bb,cc,d) {
+    console.log("zhu3")
+    console.log(aa);
+    console.log(bb);
+    console.log(cc);
+    console.log(d);
 });

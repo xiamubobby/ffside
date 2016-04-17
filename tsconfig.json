@@ -2,8 +2,7 @@
   "compilerOptions": {
     "module": "umd",
     "target": "es5",
-    "sourceMap": true,
-    "noImplicitUseStrict": true
+    "sourceMap": true
   },
   "exclude": [
     "node_modules"

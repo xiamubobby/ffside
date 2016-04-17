@@ -11,8 +11,8 @@
     }
 })(function (require, exports) {
     console.log("alpha");
-    var BASE_URL = "http://127.0.0.1:8080/";
+    exports.BASE_URL = "http://127.0.0.1:8080/";
     console.log("beta");
-    return BASE_URL;
 });
+//export = BASE_URL 
 //# sourceMappingURL=configs.js.map

@@ -39,4 +39,3 @@ require([b], function (aa, bb, cc, d) {
     console.log(cc);
     console.log(d);
 });
-//# sourceMappingURL=test.js.map

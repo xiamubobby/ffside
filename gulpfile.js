@@ -10,17 +10,27 @@ gulp.task("default", ["ts-addon", "ts-content"])
 
 gulp.task("ts-addon", function() {
     return gulp.src('./data/**/**/*.ts', {base:"./"})
-        .pipe(ts({module:"commonjs", target:"es5", noImplicitAny: true}))
+        .pipe(ts({
+            module:"commonjs",
+            target:"es5",
+            noImplicitAny: true,
+            emitError: true
+        })).js
         .pipe(rename(function (path) {
             path.basename += "-addon"
-        }))
-        .js.pipe(gulp.dest("./"))
+        })).
+        pipe(gulp.dest("./"))
 });
 gulp.task("ts-content", function () {
-    return gulp.src(".data/**/**/*.ts", {base:"./"})
-        .pipe(ts({module:"amd", target:"es5", noImplicitAny: true}))
+    return gulp.src("./data/**/**/*.ts", {base:"./"})
+        .pipe(ts({
+            module:"amd",
+            target:"es5",
+            noImplicitAny: true,
+            emitError: false
+        })).js
         .pipe(rename(function (path) {
             path.basename += "-content"
-        }))
-        .js.pipe(gulp.dest("./"))
+        })).
+        pipe(gulp.dest("./"))
 })
